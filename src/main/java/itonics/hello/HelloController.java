@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -16,11 +15,11 @@ public class HelloController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return "Hello from Spring Bootzzzzzzz!";
+        return "Hello from Spring Boot!";
     }
 
-    @RequestMapping(value = "/rest/hellos", method = RequestMethod.GET)
-    public List<Hello> get_rest() {
+    @RequestMapping(value = "/hellos", method = RequestMethod.GET)
+    public List<Hello> get_hellos() {
         return this.helloService.getHellos();
     }
 }

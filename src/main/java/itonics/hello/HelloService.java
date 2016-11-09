@@ -1,7 +1,5 @@
 package itonics.hello;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +8,9 @@ import java.util.List;
  */
 public class HelloService {
 
+    public List<Hello> hellos = new ArrayList<>();
+
     public List<Hello> getHellos() {
-        return null;
+        return this.hellos;
     }
 }
