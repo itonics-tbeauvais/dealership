@@ -1,7 +1,5 @@
 package itonics.hello;
 
-import static itonics.IdUtils.getUniqueMillis;
-
 /**
  * Created by tbeauvais on 7/5/16.
  */
@@ -12,7 +10,6 @@ public class Hello {
 
     public Hello(String greeting) {
         this.greeting = greeting;
-        this.id = getUniqueMillis();
     }
 
     public long getId() {
